@@ -1,0 +1,16 @@
+<div class="grid grid-cols-12">
+  <div class="col-span-10">
+    <app-shopping-edit
+      (addedIngredient)="onIngredientAdded($event)"
+    ></app-shopping-edit>
+    <hr class="my-3" />
+    <ul>
+      <a
+        class="cursor-pointer block border border-gray-400 rounded-lg p-1 mb-1"
+        *ngFor="let ingredient of ingredients"
+      >
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
+</div>

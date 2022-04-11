@@ -1,0 +1,51 @@
+<div class="grid grid-cols-12">
+  <div class="col-span-12">
+    <form>
+      <div class="grid grid-cols-12">
+        <div class="col-span-5">
+          <label for="name" class="block">Name</label>
+          <input
+            type="text"
+            name=""
+            id="name"
+            #nameInput
+            class="border rounded-lg border-gray-400 p-1"
+          />
+        </div>
+        <div class="col-span-2">
+          <label for="amount" class="block">Amount</label>
+          <input
+            type="number"
+            name=""
+            id="amount"
+            #amountInput
+            class="border rounded-lg border-gray-400 p-1"
+          />
+        </div>
+      </div>
+      <div class="grid grid-cols-12 mt-3">
+        <div class="col-span-12">
+          <button
+            class="btn bg-green-400 rounded-xl text-white mr-2 px-2 py-1"
+            type="submit"
+            (click)="onAddIngredient()"
+          >
+            Add
+          </button>
+          <button
+            class="btn bg-red-500 rounded-xl text-white mr-2 px-2 py-1"
+            type="button"
+          >
+            Delete
+          </button>
+          <button
+            class="btn bg-blue-500 rounded-xl text-white mr-2 px-2 py-1"
+            type="button"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

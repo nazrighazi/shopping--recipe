@@ -1,0 +1,13 @@
+<a
+  (click)="onSelected()"
+  class="flex flex-row justify-between rounded-lg bg-slate-400 p-3 mb-2 active:bg-slate-600 active:text-white"
+>
+  <div class="">
+    <p class="text-xl">{{ recipe.name }}</p>
+    <p class="text-md">{{ recipe.description }}</p>
+  </div>
+
+  <span class="">
+    <img [src]="recipe.imagePath" alt="" class style="max-height: 50px" />
+  </span>
+</a>

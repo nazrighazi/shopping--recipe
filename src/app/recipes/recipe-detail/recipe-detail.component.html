@@ -1,0 +1,28 @@
+<div class="grid grid-cols-12">
+  <div class="col-span-12">
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }}" />
+  </div>
+</div>
+<div class="grid grid-cols-12 mb-3">
+  <div class="col-span-12">
+    <h1 class="text-3xl">{{ recipe.name }}</h1>
+  </div>
+</div>
+<div class="grid grid-cols-12">
+  <div class="col-span-12">
+    <button class="rounded-full px-3 py-1 bg-blue-500 text-white">
+      Manage Recipe
+    </button>
+    <ul>
+      <li><a href="#">add Ingredients</a></li>
+      <li><a href="#">Edit Recipe</a></li>
+      <li><a href="#">Delete Recipe</a></li>
+    </ul>
+  </div>
+</div>
+<div class="grid grid-cols-12">
+  <div class="col-span-12">{{ recipe.description }}</div>
+</div>
+<div class="grid grid-cols-12">
+  <div class="col-span-12">Ingredients</div>
+</div>
